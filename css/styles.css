@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.nombre-sitio {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.nombre-sitio span {
+  color: #037bc0;
+}
+
+p {
+  width: 500px;
+  height: 100px;
+  background-color: green;
+  display: block;
+}
