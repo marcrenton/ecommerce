@@ -10,6 +10,7 @@ html {
 .nombre-sitio {
   margin-top: 50px;
   margin-bottom: 50px;
+  text-align: center;
 }
 .nombre-sitio span {
   color: #037bc0;
@@ -20,4 +21,58 @@ p {
   height: 100px;
   background-color: green;
   display: block;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navegacion-caja {
+  border-top: thin solid #e1e1e1;
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.imagen-principal {
+  background-image: url(/img/principal.jpg);
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/*CATEGORIAS*/
+.categorias h2 {
+  text-align: center;
+}
+
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.categoria-enlaces a {
+  text-align: center;
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.categorias-grid a:hover {
+  background-color: #037bc0;
+  color: #fff;
+  /* font-size: 32px; */
+  border-radius: 40px 0 0 0;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
