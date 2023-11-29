@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 62.5%; /*1rem=10px*/
 }
 *,
 *:before,
@@ -7,9 +8,47 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+/*GLOBALES*/
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0 0 5rem 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/*HEADER Y NAVEGACION*/
 .nombre-sitio {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 5rem;
+
   text-align: center;
 }
 .nombre-sitio span {
@@ -22,10 +61,6 @@ p {
   background-color: green;
   display: block;
 }
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 .navegacion-caja {
   border-top: thin solid #e1e1e1;
@@ -34,24 +69,21 @@ p {
 .navegacion {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 2rem 0;
 }
-a {
-  text-decoration: none;
-  color: black;
-}
+
 .imagen-principal {
   background-image: url(/img/principal.jpg);
-  height: 700px;
+  height: 55rem;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-img {
-  max-width: 100%;
-  display: block;
-}
 
 /*CATEGORIAS*/
+.categorias {
+  padding-top: 5rem;
+}
 .categorias h2 {
   text-align: center;
 }
@@ -59,20 +91,39 @@ img {
 .categorias-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 2rem;
 }
 .categoria-enlaces a {
   text-align: center;
   display: block;
-  padding: 20px;
-  font-size: 20px;
+  padding: 2rem;
+  font-size: 2rem;
 }
 
 .categorias-grid a:hover {
   background-color: #037bc0;
   color: #fff;
   /* font-size: 32px; */
-  border-radius: 40px 0 0 0;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 4rem 0 0 0;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+/*Bloque Nosotros*/
+
+.sobre-nosotros {
+  background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      #037bc0 50%,
+      #037bc0 100%
+    ),
+    url(/img/nosotros.jpg);
+  background-position: left center;
+  padding: 10rem 0;
+  background-repeat: no-repeat;
+  background-size: 100%, 120rem; /*el primer valor es par lienar gradient y el segundo para la imagen*/
+}
+
+.box-sobre-nosotros-text {
 }
