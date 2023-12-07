@@ -247,3 +247,9 @@ img {
   text-align: center;
   margin-top: 5rem;
 }
+
+.contenido-nosotros {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 2rem;
+}
