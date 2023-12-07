@@ -125,8 +125,7 @@ img {
   padding: 10rem 0;
   background-repeat: no-repeat;
   background-size: 100%, 120rem;
-
-  /*el primer valor es par lienar gradient y el segundo para la imagen*/
+/*el primer valor es par lienar gradient y el segundo para la imagen*/
 }
 .sobre-nosotros-grid {
   /* display: grid;
