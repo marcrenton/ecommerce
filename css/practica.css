@@ -1,0 +1,69 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1rem=10px*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+/*GLOBALES*/
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0 0 5rem 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.sobre-nosotros {
+  background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      blue 50%,
+      blue 100%
+    ),
+    url(/img/nosotros.jpg);
+  padding: 10rem 0;
+  background-repeat: no-repeat;
+  background-size: 100%, 120rem;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.grid-cat {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+}
+
+.text-nosotros {
+  grid-column: 2/3;
+}
