@@ -122,7 +122,7 @@ p {
   background-position: left center;
   padding: 10rem 0;
   background-repeat: no-repeat;
-  background-size: 100%, 120rem; /*el primer valor es par lienar gradient y el segundo para la imagen*/
+  background-size: 100%,120rem; /*el primer valor es par lienar gradient y el segundo para la imagen
 }
 
 .box-sobre-nosotros-text {
