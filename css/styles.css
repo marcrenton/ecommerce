@@ -125,7 +125,7 @@ img {
   padding: 10rem 0;
   background-repeat: no-repeat;
   background-size: 100%, 120rem;
-/*el primer valor es par lienar gradient y el segundo para la imagen*/
+  /*el primer valor es par lienar gradient y el segundo para la imagen*/
 }
 .sobre-nosotros-grid {
   /* display: grid;
@@ -245,4 +245,22 @@ img {
 .copirigth {
   text-align: center;
   margin-top: 5rem;
+}
+
+/*navegacion de nosotros superior*/
+
+.caja-nosotros {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(25rem, 1fr)
+  ); /*esto es para tener sitios responsiv sin meida cueris pero no suple mediacueris*/
+  column-gap: 4rem;
+}
+
+.info-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
