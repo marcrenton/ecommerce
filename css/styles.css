@@ -247,7 +247,6 @@ img {
   margin-top: 5rem;
 }
 
-<<<<<<< HEAD
 /*navegacion de nosotros superior*/
 
 .caja-nosotros {
@@ -264,10 +263,10 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-=======
+}
+
 .contenido-nosotros {
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 2rem;
->>>>>>> 005f901d9aa892dabc84193681444c4b8fad7561
 }
