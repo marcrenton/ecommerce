@@ -49,6 +49,9 @@ img {
 .text-center {
   text-align: center;
 }
+.max-width-300 {
+  max-width: 30rem;
+}
 
 /*HEADER Y NAVEGACION*/
 .nombre-sitio {
@@ -280,4 +283,52 @@ img {
   border-bottom: thin solid #000;
   padding-bottom: 4rem;
   margin-bottom: 2rem;
+}
+
+.entrada:last-of-type {
+  border-bottom: none;
+}
+.entrada-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.entrada-meta p {
+  font-weight: bold;
+}
+.entrada-meta span {
+  color: #037bc0;
+}
+.btn {
+  background-color: #8cbc00;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 1rem;
+  transition: background-color 0.3s ease-out;
+  text-align: center;
+}
+.btn:hover {
+  background-color: #769c02;
+}
+.contenido-entrada.blog {
+  width: 60rem;
+  margin: 0 auto;
+}
+
+/*Galeria*/
+
+.galeria {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.galeria img {
+  height: 40rem;
+  width: 40rem;
+  object-fit: cover;
 }
