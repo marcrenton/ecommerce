@@ -32,23 +32,35 @@
       <h2 class="text-center">Contacto</h2>
       <form>
         <fieldset>
-          <label for="nombre ">Nombre:</label
-          ><!--Buena practica poner label-->
-          <input
-            value="Hola Desde input"
-            id="nombre"
-            type="text"
-            placeholder="Escribe tu Nombre"
-            required
-          />
-          <label for="asunto">Asunto:</label>
-          <input id="asunto" type="text" placeholder="Tu Asunto" />
+          <legend>Tus Datos</legend>
+          <div class="campo">
+            <label for="nombre ">Nombre:</label
+            ><!--Buena practica poner label-->
+            <input
+              value="Hola Desde input"
+              id="nombre"
+              type="text"
+              placeholder="Escribe tu Nombre"
+              required
+            />
+          </div>
+          <div class="campo">
+            <label for="asunto">Asunto:</label>
+            <input id="asunto" type="text" placeholder="Tu Asunto" />
+          </div>
+          <div>
+            <label for="tel">Telefono</label>
+            <input type="text" />
+          </div>
         </fieldset>
         <fieldset>
+          <legend>Pais</legend>
           <label for="bb">Nombre:</label>
           <input id="bb" type="text" placeholder="Tu nombre" required />
         </fieldset>
-        <fieldset></fieldset>
+        <fieldset>
+          <legend>Informacion Extra</legend>
+        </fieldset>
       </form>
     </main>
 
