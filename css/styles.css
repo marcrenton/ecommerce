@@ -333,6 +333,37 @@ img {
   object-fit: cover;
 }
 
-/**Contacto**/
+/**Contacto-Formulario**/
 
+.formulario {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.formulario fieldset {
+  border: 0.1rem solid #000;
+  margin-bottom: 2rem;
+}
 
+.formulario legend {
+  background-color: #037bc0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.campo {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.campo label {
+  flex-basis: 10rem;
+}
+
+.campo input[type="text"] {
+  flex: 1;
+}

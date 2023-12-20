@@ -30,14 +30,14 @@
 
     <main class="contenido-principal container">
       <h2 class="text-center">Contacto</h2>
-      <form>
+      <form class="formulario">
         <fieldset>
           <legend>Tus Datos</legend>
           <div class="campo">
             <label for="nombre ">Nombre:</label
             ><!--Buena practica poner label-->
             <input
-              value="Hola Desde input"
+              
               id="nombre"
               type="text"
               placeholder="Escribe tu Nombre"
@@ -48,19 +48,61 @@
             <label for="asunto">Asunto:</label>
             <input id="asunto" type="text" placeholder="Tu Asunto" />
           </div>
-          <div>
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" placeholder="Tu email" />
+          </div>
+          <div class="campo">
             <label for="tel">Telefono</label>
-            <input type="text" />
+            <input id="tel" type="tel" placeholder="Tu Telefono" />
+          </div>
+          <div class="campo">
+            <label for="date">Fecha de Nacimiento</label>
+            <input id="date" type="date" placeholder="Tu Fecha de Nacimiento" />
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
           </div>
         </fieldset>
         <fieldset>
           <legend>Pais</legend>
-          <label for="bb">Nombre:</label>
-          <input id="bb" type="text" placeholder="Tu nombre" required />
+          <div class="campo">
+            <label for="pais">Pais:</label>
+            <select name="" id="pais">
+              <option value="" disabled>--Seleccione--</option>
+              <option value="RU">Rusia</option>
+              <option value="EU">EEUU</option>
+              <option value="AR" selected>Argentina</option>
+              <option value="BO">Bolivia</option>
+              <option value="PE">Peru</option>
+              <option value="ES">España</option>
+            </select>
+          </div>
         </fieldset>
         <fieldset>
           <legend>Informacion Extra</legend>
+          <div class="campo">
+            <label for="cliente">Cliente</label>
+            <input id="cliente" type="radio" name="tipo" value="cliente" />
+          </div>
+          <div class="campo">
+            <label for="proveedor">Proveedor</label>
+            <input id="proveedor" type="radio" name="tipo" value="proveedor" />
+          </div>
+          <div class="campo">
+            <label for="categorias">Categorias</label>
+            <input list="categorias" name="categorias">
+            <datalist id="categorias">
+              <option value="Cocina">
+              <option value="Exterior">
+              <option value="Oficina">
+              <option value="Recamara">
+
+          </div>
         </fieldset>
+        <input type="submit" value="Enviar Formulario">
+        <!-- <button type="submit">ENVIAR</button> -->
       </form>
     </main>
 
